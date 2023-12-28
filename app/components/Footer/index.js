@@ -8,7 +8,11 @@ import { useRouter } from "next/navigation";
 export default function Footer() {
   const [cookies, setCookie, removeCookie] = useCookies(["token"]);
   const router = useRouter();
-
+  useEffect(() => {
+    if (!cookies.token) {
+      router.push("/login");
+    }
+  }, [cookies]);
   return (
     <footer className="w-full fixed bottom-0 z-0">
       <Image
