@@ -1,0 +1,33 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* globals.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Add custom styles here */
+/* For example, custom fonts */
+/* @import url("https://fonts.googleapis.com/css2?  family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&display=swap"); */
+
+/* Customize the background color or other global styles */
+body {
+  background-color: #093545;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input:focus {
+  outline: 1px solid #224957;
+  border: 1px solid #224957;
+  color: #224957;
+  background-color: #fff;
+}
